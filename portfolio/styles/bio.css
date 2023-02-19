@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Poppins:ital,wght@0,100;0,200;0,300;1,300&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: bisque;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    gap: 100px;
+}
+.small-h {
+    width: 20px;
+    border: 2px solid #f6d0b5;
+}
+.web {
+    color: white;
+    background-color: #3b3b3d;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 10px;
+    height: 50px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: min(90%, 1440px);
+    margin-inline: auto;
+
+    background-color: #121212;
+}
+header {
+    padding: 20px 0 50px;
+}
+.hero {
+    height: 150px;
+    width: 150px;
+}
+
+.name {
+    font-family: "Poppins", sans-serif;
+    color: #f6d0b5;
+}
+
+.bio {
+    box-shadow: #f6d0b5 0px 1px 3px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 300px;
+    padding: 15px;
+    height: 500px;
+}
+.bio-h {
+    width: 200px;
+    border: 0.4px solid #f6d0b5;
+}
+
+li {
+    list-style: none;
+}
+
+.i {
+    height: 100%;
+    width: 30px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1060px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        height: 200px;
+    }
+    .bioo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .b-d {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+    .bio-detail {
+        display: none;
+    }
+    .web {
+        height: 30px;
+    }
+    .bio-h {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .bio {
+        height: 150px;
+        width: 450px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .hero {
+        width: 100px;
+        height: 100px;
+    }
+    .name {
+        font-size: 2rem;
+    }
+    .web {
+        height: 40px;
+        border-radius: none;
+    }
+}
+@media (max-width: 500px) {
+    .bio {
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    .bio {
+        width: 350px;
+    }
+}

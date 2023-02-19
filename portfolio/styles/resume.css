@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.resume {
+    width: 900px;
+    border: 0px solid #f6d0b5;
+    height: 500px;
+    background: #1e1e1f;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: #f6d0b5 0px 1px 3px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.time-line {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-left: 1px solid #f6d0b5;
+}
+
+.institute {
+    font-size: medium;
+    color: #929292;
+}
+
+.educationH {
+    font-size: 1.7rem;
+}
+
+.time-line::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    background-color: #0000;
+    left: -40px;
+    display: block;
+
+    border: 2px solid white;
+}
+@media (900px<= width <=1060) {
+    .resume {
+        width: 500px;
+        height: 600px;
+    }
+}
+
+@media (700px <= width<=900px) {
+    .resume {
+        width: 600px;
+        height: 600px;
+    }
+    .time-line {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .educationH {
+        font-size: 2rem;
+    }
+    .institute {
+        font-size: 1.3rem;
+    }
+    .education-year {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .resume {
+        width: 450px;
+        height: 450px;
+    }
+    .time-line {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .institute {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .resume {
+        width: 400px;
+        height: 450px;
+    }
+}
+@media (max-width: 450px) {
+    .resume {
+        width: 350px;
+        height: 550px;
+    }
+}

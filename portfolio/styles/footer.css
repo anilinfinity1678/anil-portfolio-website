@@ -1,0 +1,21 @@
+@media (min-width: 500px) {
+    footer {
+        display: none;
+    }
+}
+@media (max-width: 499px) {
+    footer {
+        background: #514e4e;
+        filter: opacity(0.8);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px 20px 10px;
+        margin-top: 30px;
+        position: sticky;
+        bottom: 0;
+        box-shadow: #f6d0b5 0px 1px 3px 0px,
+            rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+}

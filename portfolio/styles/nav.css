@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    color: white;
+    width: min(90%, 1440px);
+    margin-inline: auto;
+    gap: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+li:hover {
+    color: bisque;
+    border: 1px solid bisque;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 400ms ease-in-out;
+}
+
+@media (1000px<= width<1300px) {
+    nav {
+        gap: 500px;
+    }
+}
+@media (550px<= width<1000px) {
+    nav {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .list {
+        display: none;
+    }
+}
